@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/bootsrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" style="background-color: #085394;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/temp.png" height="30" width="100"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+       <i class="fa fa-user fa-4x" aria-hidden="true" style="color:white" ></i>
+        <a href="#menu-toggle" id="menu-toggle" style="color:white"><i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i></a>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-nav">
+              <ul class="media-list">
+                <li class="sidebar-brand">
+                   
+                        <button type="button" class="btn btn-success">Submit Order</button>
+                         <button type="button" class="btn btn-danger">Cancel</button>
+                         <hr />
+                </li>
+                <br />
+                <li>
+                </li>
+                <li class="media">
+
+                    <div class="media-left">
+                     <a href="#">
+                    <i class="fa fa-user fa-4x" aria-hidden="true" style="color:white;" ></i>
+                      </a>
+                    </div>
+                    <div class="media-body">
+                    <h5 class="media-heading">Test Account Only</h5>
+                    
+                   </div>
+                   
+                    
+                </li>
+                <li>
+                    Balance:  $0.00<br />
+                    *Company Name Here*<br />
+                    158 N. 19th St.<br />
+                    Melrose Park, IL I6060<br />
+                </li>
+                
+                <li>
+                  <hr />
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-primary">Left</button>
+  
+                        <button type="button" class="btn btn-primary">Right</button>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        
+
+    </div>
+    
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Sales</div>
+  <div class="panel-body">
+    <p>
+      <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" style="background-color: blue; "><i class="fa fa-list" aria-hidden="true" style="color:white"></i> Show Grid </button>
+      </span>
+    </div><!-- /input-group -->
+  </div>
+    </p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr style="background-color: #cccccc;">
+      <td>
+        <h2>Item Name</h2>
+      <td>
+      <td>
+        <h2>Price</h2>
+      <td>
+      <td>
+        <h2>Quantity</h2>
+      <td>
+      <td>
+        <h2>Disc #</h2>
+      <td>
+      <td>
+        <h2>Total</h2>
+      <td>
+    <tr>
+      <td>
+        Item Name1
+      <td>
+      <td>
+        Price1
+      <td>
+      <td>
+        Quantity1
+      <td>
+      <td>
+        Disc #1
+      <td>
+      <td>
+        Total1
+      <td>
+    <tr>
+    <tr>
+      <td>
+        Item Name2
+      <td>
+      <td>
+        Price2
+      <td>
+      <td>
+        Quantity2
+      <td>
+      <td>
+        Disc #2
+      <td>
+      <td>
+        Total2
+      <td>
+    <tr>
+  </table>
+</div>
+    
+  <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<script>
+    $( document ).ready(function() {
+    $("#wrapper").toggleClass("toggled");
+});
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    
+    </script>
+
+</body>
+
+</html>
